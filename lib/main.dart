@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       return MultiBlocProvider(
       providers: [
         BlocProvider<RouterBloc>(
-          create: (context) => RouterBloc(),
+          create: (context) => RouterBloc()..add(PageSelectEvent()),
         ),],
         child: MaterialApp(
           title: 'Gallary App',

@@ -11,7 +11,7 @@ class LoadingWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(50),
         child: GlowingProgressIndicator(
-          duration: Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 500),
           child: ClipOval(
             child: Image.asset(
               Images.kAppLogo,
