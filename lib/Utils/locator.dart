@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:gallary_test/Account/data/repositories/user_repository.dart';
 import 'package:get_it/get_it.dart';
 import 'constants.dart';
 import 'services/api_service.dart';
@@ -22,4 +23,6 @@ locator.registerLazySingleton<ApiService>(() => ApiService(Dio(BaseOptions(
             "Access-Control-Allow-Methods": "POST, OPTIONS"
           }))));
   locator.registerLazySingleton<DatabaseService>(() => DatabaseService());
+  locator.registerLazySingleton<UserRepository>(() => UserRepository());
+
 }
