@@ -7,14 +7,15 @@ class LoadingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GlowingProgressIndicator(
-      duration: Duration(milliseconds: 500),
-      child: ClipOval(
-        child: SizedBox.fromSize(
-          size: Size.fromRadius(50),
-          child: Image.asset(
-            Images.kAppLogo,
-            scale: 4,
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(50),
+        child: GlowingProgressIndicator(
+          duration: Duration(milliseconds: 500),
+          child: ClipOval(
+            child: Image.asset(
+              Images.kAppLogo,
+            ),
           ),
         ),
       ),

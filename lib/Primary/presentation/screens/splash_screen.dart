@@ -16,7 +16,7 @@ class SplashScreen extends StatelessWidget {
           //TODO: Go to login screen
         }
       },
-      child: LoadingWidget(),
+      child: Scaffold(body: LoadingWidget()),
     );
   }
 }
